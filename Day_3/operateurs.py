@@ -66,5 +66,67 @@ for x in range(-10, 10):
         print("y est égale à 0 pour x = ", x)
         break
 
-# 12
+# 12. Longueur des mots et comparaison fausse
+python_len = len('python')
+dragon_len = len('dragon')
+print(f"12. Longueurs - python:{python_len}, dragon:{dragon_len}")
+print("   Comparaison fausse:", python_len == dragon_len + 1)  # Faux intentionnellement
+
+# 13. Vérifier si 'on' est dans les deux mots
+print("\n13. 'on' dans les deux mots?:", 'on' in 'python' and 'on' in 'dragon')
+
+# 14. Vérifier présence de 'jargon'
+phrase = "I hope this course is not full of jargon"
+print("\n14. 'jargon' dans la phrase?:", 'jargon' in phrase)
+
+# 15. Vérifier absence de 'on' (comparaison fausse)
+print("\n15. Pas de 'on' dans les deux?:", not ('on' in 'python' and 'on' in 'dragon'))
+
+# 16. Longueur de 'python' et conversions
+longueur = len('python')
+float_longueur = float(longueur)
+str_longueur = str(float_longueur)
+print(f"\n16. Longueur: {longueur}, float: {float_longueur}, string: '{str_longueur}'")
+
+# 17. Vérifier si un nombre est pair
+nombre = 10
+print("\n17. Le nombre", nombre, "est pair?:", nombre % 2 == 0)
+
+# 18. Comparaison division entière
+print("\n18. 7//3 == int(2.7)?:", 7//3 == int(2.7))
+
+# 19. Comparaison de types
+print("\n19. type('10') == type(10)?:", type('10') == type(10))
+
+# 20. Vérification conversion (avec gestion d'erreur)
+try:
+    print("\n20. int('9.8') == 10?:", int(float('9.8')) == 10)
+except ValueError:
+    print("20. Conversion impossible directement de '9.8' en int")
+
+# 21. Calcul de salaire hebdomadaire
+print("\n21. Calcul de salaire:")
+heures = float(input("Entrez les heures travaillées: "))
+taux = float(input("Entrez le taux horaire: "))
+salaire = heures * taux
+print(f"Votre salaire hebdomadaire est {salaire}")
+
+# 22. Calcul du nombre de secondes vécues
+print("\n22. Calcul de secondes vécues:")
+annees = int(input("Entrez votre âge en années: "))
+secondes = annees * 365 * 24 * 60 * 60  # 1 an = 365j * 24h * 60min * 60s
+print(f"Vous avez vécu environ {secondes} secondes")
+
+# 23. Affichage de la table
+print("\n23. Table de valeurs:")
+print("1 1 1 1 1")
+print("2 1 2 4 8")
+print("3 1 3 9 27")
+print("4 1 4 16 64")
+print("5 1 5 25 125")
+
+# Version dynamique avec boucle
+print("\nVersion dynamique:")
+for i in range(1, 6):
+    print(i, 1, i, i**2, i**3)
     
