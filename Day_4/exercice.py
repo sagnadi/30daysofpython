@@ -82,3 +82,72 @@ indexation = all.index("F")
 # 22 reindex
 reindex = all.rindex("l")
 
+# 23
+sentence = "You cannot end a sentence with because because because is a conjunction"
+first_because = sentence.find("because")
+print("Première position de 'because' :", first_because)
+
+# 24
+last_because = sentence.rindex("because")
+print("Dernière position de 'because' :", last_because)
+
+# 25
+start = sentence.find("because")
+end = sentence.rfind("because") + len("because")
+sliced = sentence[start:end]
+print("Extrait :", sliced)
+
+# 26
+pos = sentence.find("because")
+print("Position :", pos)
+
+# 27
+start = sentence.find("because")
+end = sentence.rfind("because") + len("because")
+print("Sliced phrase:", sentence[start:end])
+
+# 28
+text = "Coding For All"
+print(text.startswith("Coding"))
+
+# 29
+print(text.endswith("coding"))
+
+# 30
+text_with_spaces = "   Coding For All   "
+cleaned = text_with_spaces.strip()
+print(f"'{cleaned}'")
+
+# 31
+print("30DaysOfPython".isidentifier())        
+print("thirty_days_of_python".isidentifier())  
+
+
+# 32
+libs = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
+joined = ' # '.join(libs)
+print(joined)
+
+# 33
+print("I am enjoying this challenge.\nI just wonder what is next.")
+
+# 34
+print("Name\tAge\tCountry\tCity")
+print("Asabeneh\t250\tFinland\tHelsinki")
+
+# 35
+radius = 10
+area = 3.14 * radius ** 2
+print("The area of a circle with radius {} is {} meters square.".format(radius, int(area)))
+
+# 36
+a = 8
+b = 6
+
+print("{} + {} = {}".format(a, b, a + b))
+print("{} - {} = {}".format(a, b, a - b))
+print("{} * {} = {}".format(a, b, a * b))
+print("{} / {} = {:.2f}".format(a, b, a / b))       # Format à 2 décimales
+print("{} % {} = {}".format(a, b, a % b))
+print("{} // {} = {}".format(a, b, a // b))
+print("{} ** {} = {}".format(a, b, a ** b))
