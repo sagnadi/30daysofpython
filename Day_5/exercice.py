@@ -392,7 +392,7 @@ print(f"\n3. Division des pays:")
 print(f"Première partie ({len(part1)}): {part1}")
 print(f"Seconde partie ({len(part2)}): {part2}")
 
-# 4. Déballage des pays
+# 4. Déballage des pays.
 pays_scandinaves = ['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']
 premier, deuxieme, troisieme, *scandinaves = pays_scandinaves
 print(f"\n4. Déballage:")
