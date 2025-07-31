@@ -1,8 +1,6 @@
 # Conditions
 
-## ---------------------------
-## Exercices : Niveau 1
-## ---------------------------
+# Exercice 1
 
 print("\n=== Exercice 1.1 ===")
 # 1. Vérification de l'âge pour conduire
@@ -45,9 +43,7 @@ elif a < b:
 else:
     print(f"{a} est égal à {b}")
 
-## ---------------------------
-## Exercices : Niveau 2
-## ---------------------------
+# Exercice 2
 
 print("\n=== Exercice 2.1 ===")
 # 1. Attribution de notes
@@ -94,9 +90,7 @@ else:
     fruits.append(nouveau_fruit)
     print("Liste de fruits mise à jour :", fruits)
 
-## ---------------------------
-## Exercices : Niveau 3
-## ---------------------------
+# Exercice 3
 
 print("\n=== Exercice 3.1 ===")
 # 1. Manipulation de dictionnaire
