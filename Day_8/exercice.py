@@ -1,4 +1,4 @@
-# 💻 Exercices : Jour 8 - Dictionnaires
+# Dictionnaires
 
 print("\n=== Exercice 1 ===")
 # 1. Créer un dictionnaire vide appelé dog
